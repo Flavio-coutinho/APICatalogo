@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace APICatalogo.Models;
 
-[Table("Categoias")]
+[Table("Categorias")]
 public class Categoria
 {
     public Categoria()
@@ -13,7 +13,7 @@ public class Categoria
     }
 
     [Key]
-    public int CategoriaID { get; set; }
+    public int CategoriaId { get; set; }
     [Required]
     [StringLength(80)]
     public string? Nome { get; set; }
